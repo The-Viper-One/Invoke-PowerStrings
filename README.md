@@ -10,6 +10,11 @@
 
 ## Usage
 
+## Load into memory
+```powershell
+IEX(New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/The-Viper-One/Invoke-PowerStrings/main/Invoke-PowerStrings.ps1")
+```
+
 ### Example 1: Extracting with Default Encoding and Minimum Length
 
 ```powershell
@@ -21,4 +26,4 @@ Invoke-PowerStrings -FilePath "C:\windows\temp\data.bin" -MinimumLength 5
 
 # Execute with Unicode encoding and default minimum length of 3
 Invoke-PowerStrings -FilePath "C:\windows\temp\data.bin" -Encoding Unicode -MinimumLength 3
-
+```
